@@ -114,7 +114,7 @@ solve_duration,
 
 ## Citation
 
-bibtex
+```bibtex
 @article{hashemi2025multidimensional,
   title = {A multidimensional fitness function based heuristic algorithm for set covering problems},
   author = {Hashemi, A. and Gholami, H. and Delorme, X. and Wong, K. Y.},
@@ -125,7 +125,7 @@ bibtex
   issn = {1568-4946},
   doi = {10.1016/j.asoc.2025.113038}
 }
-
+```
 ## Disclaimer
 
 This is an independent implementation and is not an official implementation
