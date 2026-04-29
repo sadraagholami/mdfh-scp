@@ -1,4 +1,8 @@
+import logging
+
 from mdfh import MDFHSetCoverSolver
+
+logging.basicConfig(level=logging.INFO)
 
 variables = [f"y{i}" for i in range(1,11)]
 
