@@ -15,10 +15,11 @@ The implementation is inspired by the heuristic algorithm presented in:
 ## Installation
 ```bash
 pip install mdfh-scp
+```
 
 ## Usage
 
-python
+```python
 from mdfh import MDFHSetCoverSolver
 
 variables = ["x1", "x2", "x3"]
@@ -61,12 +62,13 @@ result = solver.solve(verbose=True)
 print(result.selected_variables)
 print(result.objective_value)
 print(result.is_feasible)
+```
 
 ## API
 
 ### `MDFHSetCoverSolver`
 
-python
+```python
 MDFHSetCoverSolver(
 variables,
 fitness_cost_component,
@@ -75,6 +77,7 @@ fitness_route_component,
 coverage_weight,
 include_self=True,
 )
+```
 
 ### Parameters
 
@@ -93,7 +96,7 @@ Runs the MDFH heuristic and returns an `MDFHResult`.
 
 The solver returns:
 
-python
+```python
 MDFHResult(
 selected_variables,
 covered_variables,
@@ -102,7 +105,7 @@ is_feasible,
 objective_value,
 solve_duration,
 )
-
+```
 ## Exceptions
 
 - `MDFHValidationError`: Raised for invalid input data.
@@ -111,7 +114,7 @@ solve_duration,
 
 ## Citation
 
-bibtex
+```bibtex
 @article{hashemi2025multidimensional,
   title = {A multidimensional fitness function based heuristic algorithm for set covering problems},
   author = {Hashemi, A. and Gholami, H. and Delorme, X. and Wong, K. Y.},
@@ -122,7 +125,7 @@ bibtex
   issn = {1568-4946},
   doi = {10.1016/j.asoc.2025.113038}
 }
-
+```
 ## Disclaimer
 
 This is an independent implementation and is not an official implementation
