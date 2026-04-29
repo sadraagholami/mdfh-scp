@@ -12,9 +12,47 @@ The implementation is inspired by the heuristic algorithm presented in:
 > Hashemi et al. (2025), "A multidimensional fitness function based heuristic
 > algorithm for set covering problems", Applied Soft Computing.
 
-## Installation
+## Installation from GitHub
+
+You can install and use this project directly from GitHub.
+
+### 1. Clone the Repository
 ```bash
-pip install mdfh-scp
+git clone https://github.com/sadraagholami/mdfh-scp.git
+cd mdfh-scp
+```
+
+### 2. Create a Virtual Environment
+
+It is recommended to use a virtual environment to avoid dependency conflicts.
+
+#### Windows
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+#### Linux / macOS
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install the Package
+
+Install the package in editable mode:
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -e .
+```
+
+If you want to install development dependencies, run:
+
+```bash
+python -m pip install -r requirements-dev.txt
 ```
 
 ## Usage
@@ -130,6 +168,47 @@ solve_duration,
 
 This is an independent implementation and is not an official implementation
 provided by the authors of the referenced paper.
+
+## Contributing
+
+Contributions are welcome. If you would like to improve this project, fix bugs, add features, improve documentation, or add tests, please follow the steps below.
+
+### Fork the Repository
+
+Click the **Fork** button at the top-right of the repository page on GitHub.
+
+This creates a copy of the repository under your own GitHub account.
+
+### Make Your Changes
+
+You can contribute by:
+
+- Fixing bugs
+- Adding new examples
+- Improving documentation
+- Adding tests
+- Improving code structure
+- Adding new features
+- Improving validation or error handling
+
+Please keep the code clear, readable, and well documented.
+
+## Reporting Issues
+
+If you find a bug or have a suggestion, please open an issue on GitHub:
+```text
+https://github.com/sadraagholami/mdfh-scp/issues
+
+When reporting a bug, please include:
+
+- A clear description of the problem
+- Steps to reproduce the issue
+- Expected behavior
+- Actual behavior
+- Python version
+- Operating system
+- Any relevant error messages
+```
 
 ## License
 
